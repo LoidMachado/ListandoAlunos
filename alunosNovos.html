@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span>Novos Alunos</span>
+            <button onclick="OpenModal()" id="new">Cadastrar</button>
+        </div>
+        <div class="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Número</th>
+                        <th>Turma</th>
+
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="modalContainer">
+            <div class="modal">
+                <form action="">
+                    <label for="m-nome">Nome</label>
+                    <input id="m-nome" type="text" required>
+                    
+                    <label for="m-numero">Número</label>
+                    <input id="m-numero" type="number" required>
+                    
+                    <label for="m-turma">Turma</label>
+                    <input id="m-turma" type="text" required>
+                    <button id="btnSalvar">Salvar</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/alunosNovos.js"></script>
+</html>
